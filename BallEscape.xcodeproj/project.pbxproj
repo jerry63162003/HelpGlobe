@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B1F7EEE2243632D0023AAFC /* Game.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1B255956224354490081B48B /* Game.wav */; };
+		1B1F7EEF224363300023AAFC /* Die.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1B255957224354490081B48B /* Die.mp3 */; };
+		1B1F7EF1224364DD0023AAFC /* GameConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F7EF0224364DD0023AAFC /* GameConfig.swift */; };
 		1B255918224351F10081B48B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B255917224351F10081B48B /* AppDelegate.swift */; };
 		1B25591A224351F10081B48B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B255919224351F10081B48B /* ViewController.swift */; };
-		1B25591D224351F10081B48B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B25591B224351F10081B48B /* Main.storyboard */; };
-		1B25591F224351F40081B48B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B25591E224351F40081B48B /* Assets.xcassets */; };
 		1B255922224351F40081B48B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B255920224351F40081B48B /* LaunchScreen.storyboard */; };
 		1B25592D224351F40081B48B /* BallEscapeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B25592C224351F40081B48B /* BallEscapeTests.swift */; };
 		1B255938224351F40081B48B /* BallEscapeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B255937224351F40081B48B /* BallEscapeUITests.swift */; };
+		1B255947224352190081B48B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B255946224352190081B48B /* AVFoundation.framework */; };
+		1B25594C224353020081B48B /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B25594B224353020081B48B /* SoundManager.swift */; };
+		1B255951224353450081B48B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B255950224353450081B48B /* WebViewController.swift */; };
+		1B255953224353CB0081B48B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B255952224353CB0081B48B /* GameViewController.swift */; };
+		1B255955224353E30081B48B /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B255954224353E30081B48B /* GameOverViewController.swift */; };
+		1B25595C224358660081B48B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B25595A224358660081B48B /* Main.storyboard */; };
+		1B25595D224359B10081B48B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B255959224355F10081B48B /* Assets.xcassets */; };
+		DED2DD0E6D40DF99AB807334 /* Pods_BallEscape.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18335B0639E550B205BF6DD7 /* Pods_BallEscape.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,11 +43,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18335B0639E550B205BF6DD7 /* Pods_BallEscape.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BallEscape.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B1F7EF0224364DD0023AAFC /* GameConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConfig.swift; sourceTree = "<group>"; };
 		1B255914224351F10081B48B /* BallEscape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BallEscape.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B255917224351F10081B48B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B255919224351F10081B48B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1B25591C224351F10081B48B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1B25591E224351F40081B48B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B255921224351F40081B48B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B255923224351F40081B48B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B255928224351F40081B48B /* BallEscapeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BallEscapeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +56,17 @@
 		1B255933224351F40081B48B /* BallEscapeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BallEscapeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B255937224351F40081B48B /* BallEscapeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BallEscapeUITests.swift; sourceTree = "<group>"; };
 		1B255939224351F40081B48B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B255946224352190081B48B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1B25594B224353020081B48B /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		1B255950224353450081B48B /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		1B255952224353CB0081B48B /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		1B255954224353E30081B48B /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
+		1B255956224354490081B48B /* Game.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Game.wav; sourceTree = "<group>"; };
+		1B255957224354490081B48B /* Die.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Die.mp3; sourceTree = "<group>"; };
+		1B255959224355F10081B48B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B25595B224358660081B48B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54D9319AB917334FB0B5E99B /* Pods-BallEscape.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BallEscape.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BallEscape/Pods-BallEscape.debug.xcconfig"; sourceTree = "<group>"; };
+		AD4ED6F08C4057B190E3D1F6 /* Pods-BallEscape.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BallEscape.release.xcconfig"; path = "Pods/Target Support Files/Pods-BallEscape/Pods-BallEscape.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B255947224352190081B48B /* AVFoundation.framework in Frameworks */,
+				DED2DD0E6D40DF99AB807334 /* Pods_BallEscape.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18E047583DA3702BD4CF54F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54D9319AB917334FB0B5E99B /* Pods-BallEscape.debug.xcconfig */,
+				AD4ED6F08C4057B190E3D1F6 /* Pods-BallEscape.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		1B25590B224351F10081B48B = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +112,8 @@
 				1B25592B224351F40081B48B /* BallEscapeTests */,
 				1B255936224351F40081B48B /* BallEscapeUITests */,
 				1B255915224351F10081B48B /* Products */,
+				1B255945224352190081B48B /* Frameworks */,
+				18E047583DA3702BD4CF54F0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,10 +131,12 @@
 			isa = PBXGroup;
 			children = (
 				1B255917224351F10081B48B /* AppDelegate.swift */,
-				1B255919224351F10081B48B /* ViewController.swift */,
-				1B25591B224351F10081B48B /* Main.storyboard */,
-				1B25591E224351F40081B48B /* Assets.xcassets */,
+				1B25594F224353240081B48B /* Controller */,
+				1B25594A224352E20081B48B /* Model */,
+				1B255948224352A70081B48B /* Sound */,
 				1B255920224351F40081B48B /* LaunchScreen.storyboard */,
+				1B25595A224358660081B48B /* Main.storyboard */,
+				1B255959224355F10081B48B /* Assets.xcassets */,
 				1B255923224351F40081B48B /* Info.plist */,
 			);
 			path = BallEscape;
@@ -125,6 +160,44 @@
 			path = BallEscapeUITests;
 			sourceTree = "<group>";
 		};
+		1B255945224352190081B48B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B255946224352190081B48B /* AVFoundation.framework */,
+				18335B0639E550B205BF6DD7 /* Pods_BallEscape.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1B255948224352A70081B48B /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				1B255957224354490081B48B /* Die.mp3 */,
+				1B255956224354490081B48B /* Game.wav */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		1B25594A224352E20081B48B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B25594B224353020081B48B /* SoundManager.swift */,
+				1B1F7EF0224364DD0023AAFC /* GameConfig.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B25594F224353240081B48B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1B255919224351F10081B48B /* ViewController.swift */,
+				1B255952224353CB0081B48B /* GameViewController.swift */,
+				1B255954224353E30081B48B /* GameOverViewController.swift */,
+				1B255950224353450081B48B /* WebViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1B25593C224351F40081B48B /* Build configuration list for PBXNativeTarget "BallEscape" */;
 			buildPhases = (
+				623B39DBCB3E0C0946DE3CB6 /* [CP] Check Pods Manifest.lock */,
 				1B255910224351F10081B48B /* Sources */,
 				1B255911224351F10081B48B /* Frameworks */,
 				1B255912224351F10081B48B /* Resources */,
+				EECAF1D8239F8BDE43C1E35A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -230,8 +305,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B255922224351F40081B48B /* LaunchScreen.storyboard in Resources */,
-				1B25591F224351F40081B48B /* Assets.xcassets in Resources */,
-				1B25591D224351F10081B48B /* Main.storyboard in Resources */,
+				1B25595D224359B10081B48B /* Assets.xcassets in Resources */,
+				1B1F7EEE2243632D0023AAFC /* Game.wav in Resources */,
+				1B1F7EEF224363300023AAFC /* Die.mp3 in Resources */,
+				1B25595C224358660081B48B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +328,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		623B39DBCB3E0C0946DE3CB6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BallEscape-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EECAF1D8239F8BDE43C1E35A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BallEscape/Pods-BallEscape-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BallEscape/Pods-BallEscape-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1B255910224351F10081B48B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -258,6 +374,11 @@
 			files = (
 				1B25591A224351F10081B48B /* ViewController.swift in Sources */,
 				1B255918224351F10081B48B /* AppDelegate.swift in Sources */,
+				1B1F7EF1224364DD0023AAFC /* GameConfig.swift in Sources */,
+				1B25594C224353020081B48B /* SoundManager.swift in Sources */,
+				1B255951224353450081B48B /* WebViewController.swift in Sources */,
+				1B255955224353E30081B48B /* GameOverViewController.swift in Sources */,
+				1B255953224353CB0081B48B /* GameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,20 +414,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1B25591B224351F10081B48B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1B25591C224351F10081B48B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1B255920224351F40081B48B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				1B255921224351F40081B48B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1B25595A224358660081B48B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B25595B224358660081B48B /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -363,7 +484,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -418,7 +539,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -430,35 +551,43 @@
 		};
 		1B25593D224351F40081B48B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54D9319AB917334FB0B5E99B /* Pods-BallEscape.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BallEscape/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.BallEscape;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HelpGlobe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		1B25593E224351F40081B48B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD4ED6F08C4057B190E3D1F6 /* Pods-BallEscape.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = BallEscape/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.xxx.BallEscape;
+				PRODUCT_BUNDLE_IDENTIFIER = com.HelpGlobe;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

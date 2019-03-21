@@ -1,0 +1,6 @@
+framework module Pods_BallEscape {
+  umbrella header "Pods-BallEscape-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Y4t-ed-0kY">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -9,23 +9,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SaveBall" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="GameViewController" customModule="BallEscape" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="游戏页面bg" translatesAutoresizingMaskIntoConstraints="NO" id="vXg-Xi-QfW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2Go-a3-41Z">
-                                <rect key="frame" x="163.5" y="60" width="48" height="19"/>
+                                <rect key="frame" x="183" y="84" width="48" height="19"/>
                                 <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                                 <color key="textColor" red="0.35142903510000001" green="0.97115828569999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -35,7 +35,7 @@
                             <constraint firstAttribute="trailing" secondItem="vXg-Xi-QfW" secondAttribute="trailing" id="3jY-qp-Ucj"/>
                             <constraint firstItem="vXg-Xi-QfW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="7CB-hD-Xma"/>
                             <constraint firstItem="2Go-a3-41Z" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7K4-rn-Zj9"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vXg-Xi-QfW" secondAttribute="bottom" id="82c-Lq-pYR"/>
+                            <constraint firstAttribute="bottom" secondItem="vXg-Xi-QfW" secondAttribute="bottom" id="CPW-2q-bDH"/>
                             <constraint firstItem="2Go-a3-41Z" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="SoU-rQ-f8e"/>
                             <constraint firstItem="vXg-Xi-QfW" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="oAj-mL-7IV"/>
                         </constraints>
@@ -52,33 +52,33 @@
         <!--Game Over View Controller-->
         <scene sceneID="t2I-1E-kfY">
             <objects>
-                <viewController id="cpb-jt-bih" customClass="GameOverViewController" customModule="SaveBall" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cpb-jt-bih" customClass="GameOverViewController" customModule="BallEscape" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z8i-6B-egj"/>
                         <viewControllerLayoutGuide type="bottom" id="weN-uw-kZD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="6Ki-9a-fzS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="结算页面" translatesAutoresizingMaskIntoConstraints="NO" id="9cE-cl-23v">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="得分：19秒" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnL-L9-1VW">
-                                <rect key="frame" x="121" y="318" width="133.5" height="31"/>
+                                <rect key="frame" x="140.33333333333331" y="432.66666666666669" width="133.33333333333331" height="31"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" red="0.99607843139999996" green="0.95686274510000002" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2P-Jo-6oI">
-                                <rect key="frame" x="98.5" y="363" width="178" height="60"/>
+                                <rect key="frame" x="108.66666666666667" y="482.00000000000006" width="196.66666666666663" height="80.666666666666686"/>
                                 <state key="normal" image="返回首页"/>
                                 <connections>
                                     <segue destination="Y4t-ed-0kY" kind="show" id="gTf-ai-532"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pWs-TJ-JoV">
-                                <rect key="frame" x="98.5" y="441" width="178" height="80"/>
+                                <rect key="frame" x="108.66666666666667" y="580.66666666666663" width="196.66666666666663" height="107.33333333333337"/>
                                 <state key="normal" image="继续游戏"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="Q0w-dP-dVq"/>
@@ -97,9 +97,9 @@
                             <constraint firstAttribute="trailing" secondItem="9cE-cl-23v" secondAttribute="trailing" id="R1I-3F-O7L"/>
                             <constraint firstItem="VnL-L9-1VW" firstAttribute="centerX" secondItem="6Ki-9a-fzS" secondAttribute="centerX" id="aTd-PC-9wB"/>
                             <constraint firstItem="pWs-TJ-JoV" firstAttribute="width" secondItem="9cE-cl-23v" secondAttribute="width" multiplier="178:375" id="acV-ig-AGr"/>
+                            <constraint firstAttribute="bottom" secondItem="9cE-cl-23v" secondAttribute="bottom" id="ePB-nd-xHa"/>
                             <constraint firstItem="VnL-L9-1VW" firstAttribute="centerY" secondItem="6Ki-9a-fzS" secondAttribute="centerY" id="f9c-oZ-LvL"/>
                             <constraint firstItem="9cE-cl-23v" firstAttribute="top" secondItem="6Ki-9a-fzS" secondAttribute="top" id="iW0-og-avq"/>
-                            <constraint firstItem="weN-uw-kZD" firstAttribute="top" secondItem="9cE-cl-23v" secondAttribute="bottom" id="jR3-qe-2oi"/>
                             <constraint firstItem="G2P-Jo-6oI" firstAttribute="width" secondItem="9cE-cl-23v" secondAttribute="width" multiplier="178:375" id="xeC-rg-3wY"/>
                         </constraints>
                     </view>
@@ -111,65 +111,73 @@
             </objects>
             <point key="canvasLocation" x="1882" y="-416"/>
         </scene>
-        <!--Main View View Controller-->
+        <!--View Controller-->
         <scene sceneID="GHZ-sn-uRx">
             <objects>
-                <viewController id="Y4t-ed-0kY" customClass="MainViewViewController" customModule="SaveBall" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y4t-ed-0kY" customClass="ViewController" customModule="BallEscape" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IVc-8u-anK"/>
                         <viewControllerLayoutGuide type="bottom" id="wfc-Y6-KEc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wE6-au-6BL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="首页" translatesAutoresizingMaskIntoConstraints="NO" id="T0O-Ch-JMw">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYO-ek-Emn">
-                                <rect key="frame" x="81" y="354.5" width="213" height="88"/>
-                                <state key="normal" image="開始遊戲"/>
-                                <connections>
-                                    <action selector="buttonClick:" destination="Y4t-ed-0kY" eventType="touchUpInside" id="rku-9G-FyA"/>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="k2H-qt-hBQ"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最高时间：10秒" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NWi-uh-KAx">
-                                <rect key="frame" x="112" y="442.5" width="151" height="25.5"/>
+                                <rect key="frame" x="131.66666666666666" y="580.66666666666663" width="150.99999999999997" height="25.333333333333371"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" red="0.99607843137254903" green="0.95686274509803926" blue="0.039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vKu-vp-W5m">
-                                <rect key="frame" x="305" y="17" width="50" height="50"/>
+                                <rect key="frame" x="344" y="30" width="50" height="50"/>
                                 <state key="normal" image="設定"/>
                                 <connections>
-                                    <action selector="buttonClick:" destination="Y4t-ed-0kY" eventType="touchUpInside" id="h7Q-IA-x2l"/>
+                                    <action selector="buttonClick:" destination="Y4t-ed-0kY" eventType="touchUpInside" id="7mh-cO-exP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wg-Ca-g53">
+                                <rect key="frame" x="127" y="433.66666666666669" width="160" height="49"/>
+                                <state key="normal" image="难度easy按钮"/>
+                                <connections>
+                                    <action selector="buttonClick:" destination="Y4t-ed-0kY" eventType="touchUpInside" id="j0z-7Y-mqM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nYO-ek-Emn">
+                                <rect key="frame" x="100.66666666666669" y="487.66666666666674" width="213" height="88"/>
+                                <state key="normal" image="開始遊戲"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="k2H-qt-hBQ"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="T0O-Ch-JMw" firstAttribute="leading" secondItem="wE6-au-6BL" secondAttribute="leading" id="0YO-6t-oml"/>
-                            <constraint firstItem="NWi-uh-KAx" firstAttribute="centerX" secondItem="nYO-ek-Emn" secondAttribute="centerX" id="EvE-Iq-mSp"/>
                             <constraint firstItem="T0O-Ch-JMw" firstAttribute="top" secondItem="wE6-au-6BL" secondAttribute="top" id="Fm3-Mb-hes"/>
-                            <constraint firstItem="NWi-uh-KAx" firstAttribute="top" secondItem="nYO-ek-Emn" secondAttribute="bottom" id="H4i-qk-sm4"/>
+                            <constraint firstItem="NWi-uh-KAx" firstAttribute="top" secondItem="nYO-ek-Emn" secondAttribute="bottom" constant="5" id="H4i-qk-sm4"/>
                             <constraint firstAttribute="trailing" secondItem="T0O-Ch-JMw" secondAttribute="trailing" id="UsN-Lh-rnF"/>
-                            <constraint firstItem="wfc-Y6-KEc" firstAttribute="top" secondItem="T0O-Ch-JMw" secondAttribute="bottom" id="VDS-vo-INe"/>
-                            <constraint firstItem="nYO-ek-Emn" firstAttribute="centerX" secondItem="wE6-au-6BL" secondAttribute="centerX" id="hI1-gJ-DT4"/>
+                            <constraint firstItem="nYO-ek-Emn" firstAttribute="top" secondItem="1wg-Ca-g53" secondAttribute="bottom" constant="5" id="bOL-Hv-R9A"/>
                             <constraint firstAttribute="trailing" secondItem="vKu-vp-W5m" secondAttribute="trailing" constant="20" id="nfk-lQ-uPS"/>
-                            <constraint firstItem="vKu-vp-W5m" firstAttribute="top" secondItem="wE6-au-6BL" secondAttribute="top" constant="17" id="svY-WZ-s7F"/>
-                            <constraint firstItem="nYO-ek-Emn" firstAttribute="centerY" secondItem="wE6-au-6BL" secondAttribute="centerY" constant="65" id="ujF-rQ-x1w"/>
+                            <constraint firstItem="1wg-Ca-g53" firstAttribute="centerX" secondItem="wE6-au-6BL" secondAttribute="centerX" id="oY6-mf-v39"/>
+                            <constraint firstItem="NWi-uh-KAx" firstAttribute="centerX" secondItem="1wg-Ca-g53" secondAttribute="centerX" id="s3k-YQ-Iqd"/>
+                            <constraint firstItem="1wg-Ca-g53" firstAttribute="centerY" secondItem="wE6-au-6BL" secondAttribute="centerY" constant="10" id="s8q-hz-4dZ"/>
+                            <constraint firstItem="vKu-vp-W5m" firstAttribute="top" secondItem="wE6-au-6BL" secondAttribute="top" constant="30" id="svY-WZ-s7F"/>
+                            <constraint firstAttribute="bottom" secondItem="T0O-Ch-JMw" secondAttribute="bottom" id="tbK-11-xEq"/>
+                            <constraint firstItem="nYO-ek-Emn" firstAttribute="centerX" secondItem="1wg-Ca-g53" secondAttribute="centerX" id="zj6-A3-1WC"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="scoreLabel" destination="NWi-uh-KAx" id="bF7-Ty-aSD"/>
-                        <outlet property="settingBtn" destination="vKu-vp-W5m" id="1Ny-QG-zgO"/>
+                        <outlet property="modeButton" destination="1wg-Ca-g53" id="b7J-PR-gNR"/>
+                        <outlet property="scoreLabel" destination="NWi-uh-KAx" id="ImQ-2W-jmh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E0e-KX-XqM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-174.375" y="93.75"/>
+            <point key="canvasLocation" x="-175.19999999999999" y="93.103448275862078"/>
         </scene>
     </scenes>
     <resources>
@@ -179,6 +187,7 @@
         <image name="設定" width="50" height="50"/>
         <image name="返回首页" width="178" height="56"/>
         <image name="開始遊戲" width="213" height="88"/>
+        <image name="难度easy按钮" width="160" height="49"/>
         <image name="首页" width="375" height="667"/>
     </resources>
     <inferredMetricsTieBreakers>
